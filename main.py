@@ -20,7 +20,13 @@ async def hello(ctx):
 async def heh(ctx, count_heh = 5):
     await ctx.send("he" * count_heh)
 
-bot.command()
+@bot.command()
+async def ecology(ctx,eco="создание товара с разу уже из экологичных и переробатываемых материалов,Выключайте компьютер ночью, это поможет сэкономить до 1000 кВт ежемесячно,сортировать мусор"):
+    await ctx.send(eco)
+
+@bot.command()
+async def Help1(ctx,):
+    await ctx.send("Cпереди команды нужно ставить $;Help1-Эта команда,heh количество-отправляет смайлики heh слитно,mem-присылает случайную смешную картину,ecology-расказывает как сохранить окружающую среду"):
 
 
 @bot.command()
